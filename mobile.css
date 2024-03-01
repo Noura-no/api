@@ -1,0 +1,19 @@
+body::after{
+    display: none;
+
+}
+body::before{
+    display: none;
+}
+#body{
+    width: 120vw;
+    height: 100vh;
+}
+#post{
+    width: 80vw;
+}
+#myForm{
+    display: flex;
+    flex-wrap: wrap;
+
+}

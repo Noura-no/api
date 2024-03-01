@@ -1,0 +1,102 @@
+body{
+    background-color:whitesmoke;
+    overflow-x: hidden;
+}
+
+body::before {
+    display: block;
+    content: '';
+    width: 500px;
+    height: 500px;
+    background-color: #6194bd;
+    border-radius: 20%;
+    position: absolute;
+    top: -220px;
+    right: -150px;
+    transform: rotate(50deg);
+    z-index: 3;
+}
+body::after {
+    display: inline;
+    content: '';
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 325px;
+    left: 100px;
+    border-radius: 20%;
+    background-color: #6194bd;
+    transform: rotate(45deg);
+    /* border: solid 2px rgba(0, 0, 0, 0.745); */
+}
+
+#header{
+    color: skyblue;
+    font-size: 50px;
+    text-align: center;
+}
+#myform{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-items: center;
+}
+#title{
+    width: 250px;
+    height: 40px;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+#title::placeholder{
+color: skyblue;
+font-size: 20px;
+text-align: center;
+font-family: 'Rochester';
+}
+#post{
+    width: 350px;
+    height: 200px;
+    border: solid black 2px;
+    border-radius: 10px;
+    color: black;
+    font-size: 35px;
+
+}
+#btn{
+    width: 80px;
+    height: 50px;
+    color: black;
+    background-color: steelblue;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+#btn:hover{
+    cursor: pointer;
+    background-color:slategray;
+}
+.error{
+    background-color: rgba(255, 0, 0, 0.499);
+    border-radius: 20px;
+    width: 200px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#messa{
+    text-align: center;
+    height: 25px;
+
+}
+h1{
+    color: skyblue;
+    font-size: 40px;
+    font-family: 'Rochester';
+}
+h2{
+    color:slategrey;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Rochester';
+}
+#user{
+    list-style: none;
+}
